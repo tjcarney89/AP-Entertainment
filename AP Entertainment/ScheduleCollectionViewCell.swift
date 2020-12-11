@@ -13,8 +13,6 @@ class ScheduleCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var venueImageView: UIImageView!
     @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var venueNameLabel: UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

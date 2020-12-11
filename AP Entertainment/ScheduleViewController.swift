@@ -29,18 +29,16 @@ class ScheduleViewController: UIViewController, UICollectionViewDelegate, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "venueCell", for: indexPath) as! ScheduleCollectionViewCell
         let currentVenue = self.venues[indexPath.row]
-        cell.venueNameLabel.text = currentVenue.name.uppercased()
-        cell.dayLabel.text = currentVenue.day
-        cell.timeLabel.text = currentVenue.time
+        cell.dayLabel.text = currentVenue.day + ", " + currentVenue.time
         cell.venueImageView.image = UIImage(named: currentVenue.imageName)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let spacing = 8
-        let width = (Int(self.scheduleCollectionView.frame.width) - (spacing))/2
-        //let height = (Int(self.scheduleCollectionView.frame.height) - (spacing))/2
-        return CGSize(width: width, height: width)
+        let width = (Int(self.scheduleCollectionView.frame.width) - (spacing))
+        let height = (Int(self.scheduleCollectionView.frame.height) - (spacing))/3
+        return CGSize(width: width, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -52,14 +50,15 @@ class ScheduleViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let detailVC = segue.destination as? VenueDetailViewController {
+            detailVC.selectedVenue = self.venues[scheduleCollectionView.indexPathsForSelectedItems![0].row]
+        }
     }
-    */
+    
 
 }
