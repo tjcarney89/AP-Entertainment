@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Psg-HG-Rqq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PHq-tk-NHW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -10,7 +10,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Schedule View Controller-->
+        <!--Question of the Day-->
+        <scene sceneID="giQ-aL-UQx">
+            <objects>
+                <viewController id="2dK-eu-UZt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MiZ-LK-lzP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FnZ-PG-q37"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Question of the Day" image="questionmark.circle.fill" catalog="system" selectedImage="questionmark.circle.fill" id="TC3-EB-kIb">
+                        <color key="badgeColor" name="AP Entertainment Red"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1D-QJ-K4G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1650" y="223"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="8yn-cI-XDr">
+            <objects>
+                <tabBarController id="PHq-tk-NHW" customClass="MainTabBarController" customModule="AP_Entertainment" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="60E-S9-CTx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="AP Entertainment Red"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Psg-HG-Rqq" kind="relationship" relationship="viewControllers" id="t4e-BO-Poe"/>
+                        <segue destination="2dK-eu-UZt" kind="relationship" relationship="viewControllers" id="xIl-pT-fvN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJa-ud-8Ki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2538" y="-81"/>
+        </scene>
+        <!--Schedule-->
         <scene sceneID="UeZ-mu-ZtJ">
             <objects>
                 <viewController id="Psg-HG-Rqq" customClass="ScheduleViewController" customModule="AP_Entertainment" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +56,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d5X-Oi-KuS">
-                                <rect key="frame" x="10.5" y="44" width="393" height="818"/>
+                                <rect key="frame" x="10.5" y="44" width="393" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="22z-CU-ogy">
                                     <size key="itemSize" width="378" height="236"/>
@@ -107,13 +144,16 @@
                             <constraint firstItem="d5X-Oi-KuS" firstAttribute="centerX" secondItem="smB-H4-Vca" secondAttribute="centerX" id="i2R-em-LU3"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="calendar" catalog="system" selectedImage="calendar" id="p6p-Ws-NO1">
+                        <color key="badgeColor" name="AP Entertainment Red"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="scheduleCollectionView" destination="d5X-Oi-KuS" id="09v-Of-U6P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XUr-QY-h2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-968.11594202898561" y="93.75"/>
+            <point key="canvasLocation" x="-1651" y="-527"/>
         </scene>
         <!--Venue Detail View Controller-->
         <scene sceneID="jiu-ls-4yQ">
@@ -153,7 +193,7 @@
                                     <action selector="takeoutButtonPressed:" destination="HhI-3o-UM9" eventType="touchUpInside" id="0Dr-Ck-RaZ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dIM-MJ-cf7">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dIM-MJ-cf7">
                                 <rect key="frame" x="10.5" y="294" width="393" height="252"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -209,12 +249,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YrC-lk-8Q7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130.43478260869566" y="93.75"/>
+            <point key="canvasLocation" x="-813" y="-527"/>
         </scene>
     </scenes>
     <resources>
         <image name="apps.iphone" catalog="system" width="108" height="128"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="video.fill" catalog="system" width="128" height="82"/>
         <namedColor name="AP Entertainment Red">
             <color red="0.82745098039215681" green="0.21176470588235294" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

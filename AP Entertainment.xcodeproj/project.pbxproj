@@ -16,6 +16,7 @@
 		F00442CD25291C8C00CBC5B5 /* ScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00442CC25291C8C00CBC5B5 /* ScheduleCollectionViewCell.swift */; };
 		F00442D025291D3D00CBC5B5 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00442CF25291D3D00CBC5B5 /* Venue.swift */; };
 		F0E9FC11258C387E00A3B3A7 /* Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E9FC10258C387E00A3B3A7 /* Venues.swift */; };
+		F0F5E44A258C4A5200CFF9F4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F5E449258C4A5200CFF9F4 /* MainTabBarController.swift */; };
 		F0FBA55F258302FA0005FB5F /* VenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FBA55E258302FA0005FB5F /* VenueDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		F00442CC25291C8C00CBC5B5 /* ScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
 		F00442CF25291D3D00CBC5B5 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		F0E9FC10258C387E00A3B3A7 /* Venues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venues.swift; sourceTree = "<group>"; };
+		F0F5E449258C4A5200CFF9F4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F0FBA55E258302FA0005FB5F /* VenueDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				F0E9FC10258C387E00A3B3A7 /* Venues.swift */,
 				F00442CC25291C8C00CBC5B5 /* ScheduleCollectionViewCell.swift */,
 				F0FBA55E258302FA0005FB5F /* VenueDetailViewController.swift */,
+				F0F5E449258C4A5200CFF9F4 /* MainTabBarController.swift */,
 				F00442CF25291D3D00CBC5B5 /* Venue.swift */,
 				F00442B725290D8900CBC5B5 /* Main.storyboard */,
 				F00442BA25290D8F00CBC5B5 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 			files = (
 				F00442D025291D3D00CBC5B5 /* Venue.swift in Sources */,
 				F00442CD25291C8C00CBC5B5 /* ScheduleCollectionViewCell.swift in Sources */,
+				F0F5E44A258C4A5200CFF9F4 /* MainTabBarController.swift in Sources */,
 				F00442B225290D8900CBC5B5 /* AppDelegate.swift in Sources */,
 				F0FBA55F258302FA0005FB5F /* VenueDetailViewController.swift in Sources */,
 				F0E9FC11258C387E00A3B3A7 /* Venues.swift in Sources */,
