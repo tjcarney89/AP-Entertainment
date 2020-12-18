@@ -12,7 +12,7 @@ class ScheduleViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var scheduleCollectionView: UICollectionView!
     
    
-    let venues = [Venue(name: "The Brickyard", day: "Monday", time: "8pm", imageName: "brickyard"), Venue(name: "The Colonial", day: "Tuesday", time: "8pm", imageName: "colonial"), Venue(name: "The Galley", day: "Wednesday", time: "8pm", imageName: "galley")]
+    let venues = Venues.retrieveAll()
 
     override func viewDidLoad() {
         super.viewDidLoad()

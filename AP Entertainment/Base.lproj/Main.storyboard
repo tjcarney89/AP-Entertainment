@@ -126,49 +126,82 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Ut-dT-o2W">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="278"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtI-nn-NLG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtI-nn-NLG">
                                 <rect key="frame" x="31" y="694" width="352" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.54498171806335449" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GCL-61-fO6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Join on Zoom">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                                <state key="normal" title="Join on Zoom" image="video.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="zoomButtonPressed:" destination="HhI-3o-UM9" eventType="touchUpInside" id="6aX-Ur-ksn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyE-rP-8Zv">
-                                <rect key="frame" x="31" y="620" width="352" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyE-rP-8Zv">
+                                <rect key="frame" x="31" y="628" width="352" height="50"/>
                                 <color key="backgroundColor" name="AP Entertainment Red"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Order Takeout">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                                <state key="normal" title="Call " image="phone.fill" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="takeoutButtonPressed:" destination="HhI-3o-UM9" eventType="touchUpInside" id="0Dr-Ck-RaZ"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dIM-MJ-cf7">
+                                <rect key="frame" x="10.5" y="294" width="393" height="252"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o47-Hh-ACr">
+                                <rect key="frame" x="31" y="562" width="352" height="50"/>
+                                <color key="backgroundColor" red="0.11764705882352941" green="0.27450980392156865" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                                <state key="normal" title="Order on BingBite" image="apps.iphone" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="bingBiteButtonPressed:" destination="HhI-3o-UM9" eventType="touchUpInside" id="o2T-gG-hhb"/>
+                                    <action selector="takeoutButtonPressed:" destination="HhI-3o-UM9" eventType="touchUpInside" id="rvV-bF-ckd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r1g-nQ-Qai"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="dIM-MJ-cf7" firstAttribute="width" secondItem="gCV-49-zsX" secondAttribute="width" multiplier="0.95" id="1fn-C0-2iH"/>
+                            <constraint firstItem="dIM-MJ-cf7" firstAttribute="top" secondItem="6Ut-dT-o2W" secondAttribute="bottom" constant="16" id="A9X-M5-Ii2"/>
+                            <constraint firstItem="o47-Hh-ACr" firstAttribute="height" secondItem="QyE-rP-8Zv" secondAttribute="height" id="AKS-Yd-bzB"/>
                             <constraint firstItem="QyE-rP-8Zv" firstAttribute="height" secondItem="CtI-nn-NLG" secondAttribute="height" id="ALB-WG-UQh"/>
                             <constraint firstAttribute="topMargin" secondItem="6Ut-dT-o2W" secondAttribute="top" id="COX-zV-MJd"/>
+                            <constraint firstItem="dIM-MJ-cf7" firstAttribute="centerX" secondItem="r1g-nQ-Qai" secondAttribute="centerX" id="J5f-Zq-gKe"/>
                             <constraint firstItem="QyE-rP-8Zv" firstAttribute="width" secondItem="CtI-nn-NLG" secondAttribute="width" id="L5V-rY-haL"/>
+                            <constraint firstItem="o47-Hh-ACr" firstAttribute="width" secondItem="QyE-rP-8Zv" secondAttribute="width" id="RN3-NO-8vV"/>
                             <constraint firstItem="6Ut-dT-o2W" firstAttribute="width" secondItem="gCV-49-zsX" secondAttribute="width" id="b6U-5X-DvY"/>
                             <constraint firstItem="6Ut-dT-o2W" firstAttribute="centerX" secondItem="r1g-nQ-Qai" secondAttribute="centerX" id="bLn-Gd-Wun"/>
                             <constraint firstItem="r1g-nQ-Qai" firstAttribute="bottom" secondItem="CtI-nn-NLG" secondAttribute="bottom" constant="64" id="epm-Ip-Vvb"/>
-                            <constraint firstItem="CtI-nn-NLG" firstAttribute="top" secondItem="QyE-rP-8Zv" secondAttribute="bottom" constant="24" id="fmw-sL-GYi"/>
+                            <constraint firstItem="CtI-nn-NLG" firstAttribute="top" secondItem="QyE-rP-8Zv" secondAttribute="bottom" constant="16" id="fmw-sL-GYi"/>
                             <constraint firstItem="CtI-nn-NLG" firstAttribute="width" secondItem="gCV-49-zsX" secondAttribute="width" multiplier="0.85" id="ld2-wS-ZgC"/>
+                            <constraint firstItem="o47-Hh-ACr" firstAttribute="top" secondItem="dIM-MJ-cf7" secondAttribute="bottom" constant="16" id="mny-JZ-JC1"/>
+                            <constraint firstItem="QyE-rP-8Zv" firstAttribute="top" secondItem="o47-Hh-ACr" secondAttribute="bottom" constant="16" id="pPu-KP-r4q"/>
+                            <constraint firstItem="o47-Hh-ACr" firstAttribute="centerX" secondItem="r1g-nQ-Qai" secondAttribute="centerX" id="vCa-dQ-Za7"/>
                             <constraint firstItem="6Ut-dT-o2W" firstAttribute="height" secondItem="gCV-49-zsX" secondAttribute="height" multiplier="0.33" id="vu6-FO-WBV"/>
                             <constraint firstItem="CtI-nn-NLG" firstAttribute="centerX" secondItem="r1g-nQ-Qai" secondAttribute="centerX" id="w23-MT-sGb"/>
                             <constraint firstItem="QyE-rP-8Zv" firstAttribute="centerX" secondItem="r1g-nQ-Qai" secondAttribute="centerX" id="x1Y-aA-83f"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bingbiteButton" destination="o47-Hh-ACr" id="FS7-AH-aAh"/>
+                        <outlet property="descriptionTextView" destination="dIM-MJ-cf7" id="oN4-hm-pBg"/>
                         <outlet property="takeoutButton" destination="QyE-rP-8Zv" id="u9k-8C-lwe"/>
                         <outlet property="venueImageView" destination="6Ut-dT-o2W" id="q83-TQ-osB"/>
                         <outlet property="zoomButton" destination="CtI-nn-NLG" id="svn-iA-nGR"/>
@@ -176,10 +209,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YrC-lk-8Q7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-129" y="94"/>
+            <point key="canvasLocation" x="-130.43478260869566" y="93.75"/>
         </scene>
     </scenes>
     <resources>
+        <image name="apps.iphone" catalog="system" width="108" height="128"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <image name="video.fill" catalog="system" width="128" height="82"/>
         <namedColor name="AP Entertainment Red">
             <color red="0.82745098039215681" green="0.21176470588235294" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

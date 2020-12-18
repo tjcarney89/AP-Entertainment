@@ -12,4 +12,8 @@ struct Venue {
     let day: String
     let time: String
     let imageName: String
+    let description: String
+    let phoneNumber: String
+    let onBingBite: Bool
+    let bingBiteURL: String
 }
