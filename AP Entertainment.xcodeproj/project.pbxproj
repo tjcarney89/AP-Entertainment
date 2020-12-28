@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		389426A277278BEDFF076B92 /* Pods_AP_Entertainment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A67DD3012E8A6A3A1FCE61 /* Pods_AP_Entertainment.framework */; };
 		F00442B225290D8900CBC5B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00442B125290D8900CBC5B5 /* AppDelegate.swift */; };
 		F00442B425290D8900CBC5B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00442B325290D8900CBC5B5 /* SceneDelegate.swift */; };
 		F00442B925290D8900CBC5B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00442B725290D8900CBC5B5 /* Main.storyboard */; };
@@ -15,13 +16,18 @@
 		F00442C9252918FC00CBC5B5 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00442C8252918FC00CBC5B5 /* ScheduleViewController.swift */; };
 		F00442CD25291C8C00CBC5B5 /* ScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00442CC25291C8C00CBC5B5 /* ScheduleCollectionViewCell.swift */; };
 		F00442D025291D3D00CBC5B5 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00442CF25291D3D00CBC5B5 /* Venue.swift */; };
+		F044676D259A7860008A3234 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F044676C259A7860008A3234 /* FirebaseClient.swift */; };
+		F0446770259A78DF008A3234 /* QuestionOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F044676F259A78DF008A3234 /* QuestionOfTheDay.swift */; };
 		F0E9FC11258C387E00A3B3A7 /* Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E9FC10258C387E00A3B3A7 /* Venues.swift */; };
 		F0EFFDCB259A681D002D4E79 /* QuestionOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EFFDCA259A681D002D4E79 /* QuestionOfTheDayViewController.swift */; };
+		F0EFFDCF259A718B002D4E79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0EFFDCE259A718B002D4E79 /* GoogleService-Info.plist */; };
 		F0F5E44A258C4A5200CFF9F4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F5E449258C4A5200CFF9F4 /* MainTabBarController.swift */; };
 		F0FBA55F258302FA0005FB5F /* VenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FBA55E258302FA0005FB5F /* VenueDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F420C3B26EC88EB49F627B8 /* Pods-AP Entertainment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AP Entertainment.debug.xcconfig"; path = "Target Support Files/Pods-AP Entertainment/Pods-AP Entertainment.debug.xcconfig"; sourceTree = "<group>"; };
+		83A67DD3012E8A6A3A1FCE61 /* Pods_AP_Entertainment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AP_Entertainment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00442AE25290D8900CBC5B5 /* AP Entertainment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AP Entertainment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00442B125290D8900CBC5B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F00442B325290D8900CBC5B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,10 +38,14 @@
 		F00442C8252918FC00CBC5B5 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		F00442CC25291C8C00CBC5B5 /* ScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
 		F00442CF25291D3D00CBC5B5 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		F044676C259A7860008A3234 /* FirebaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
+		F044676F259A78DF008A3234 /* QuestionOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOfTheDay.swift; sourceTree = "<group>"; };
 		F0E9FC10258C387E00A3B3A7 /* Venues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venues.swift; sourceTree = "<group>"; };
 		F0EFFDCA259A681D002D4E79 /* QuestionOfTheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOfTheDayViewController.swift; sourceTree = "<group>"; };
+		F0EFFDCE259A718B002D4E79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F0F5E449258C4A5200CFF9F4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F0FBA55E258302FA0005FB5F /* VenueDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailViewController.swift; sourceTree = "<group>"; };
+		FE0B875A55848102EA593D31 /* Pods-AP Entertainment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AP Entertainment.release.xcconfig"; path = "Target Support Files/Pods-AP Entertainment/Pods-AP Entertainment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				389426A277278BEDFF076B92 /* Pods_AP_Entertainment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5192AD93A199B6321EBE9383 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F420C3B26EC88EB49F627B8 /* Pods-AP Entertainment.debug.xcconfig */,
+				FE0B875A55848102EA593D31 /* Pods-AP Entertainment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B24052050587B018E94E4F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83A67DD3012E8A6A3A1FCE61 /* Pods_AP_Entertainment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F00442A525290D8900CBC5B5 = {
 			isa = PBXGroup;
 			children = (
 				F00442B025290D8900CBC5B5 /* AP Entertainment */,
 				F00442AF25290D8900CBC5B5 /* Products */,
+				5192AD93A199B6321EBE9383 /* Pods */,
+				B24052050587B018E94E4F09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,15 +102,18 @@
 				F00442B325290D8900CBC5B5 /* SceneDelegate.swift */,
 				F00442C8252918FC00CBC5B5 /* ScheduleViewController.swift */,
 				F0E9FC10258C387E00A3B3A7 /* Venues.swift */,
+				F044676F259A78DF008A3234 /* QuestionOfTheDay.swift */,
 				F00442CC25291C8C00CBC5B5 /* ScheduleCollectionViewCell.swift */,
 				F0FBA55E258302FA0005FB5F /* VenueDetailViewController.swift */,
 				F0EFFDCA259A681D002D4E79 /* QuestionOfTheDayViewController.swift */,
 				F0F5E449258C4A5200CFF9F4 /* MainTabBarController.swift */,
+				F044676C259A7860008A3234 /* FirebaseClient.swift */,
 				F00442CF25291D3D00CBC5B5 /* Venue.swift */,
 				F00442B725290D8900CBC5B5 /* Main.storyboard */,
 				F00442BA25290D8F00CBC5B5 /* Assets.xcassets */,
 				F00442BC25290D8F00CBC5B5 /* LaunchScreen.storyboard */,
 				F00442BF25290D8F00CBC5B5 /* Info.plist */,
+				F0EFFDCE259A718B002D4E79 /* GoogleService-Info.plist */,
 			);
 			path = "AP Entertainment";
 			sourceTree = "<group>";
@@ -92,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F00442C225290D8F00CBC5B5 /* Build configuration list for PBXNativeTarget "AP Entertainment" */;
 			buildPhases = (
+				EDA71D2E9E3BE28144E65D34 /* [CP] Check Pods Manifest.lock */,
 				F00442AA25290D8900CBC5B5 /* Sources */,
 				F00442AB25290D8900CBC5B5 /* Frameworks */,
 				F00442AC25290D8900CBC5B5 /* Resources */,
+				E2A61F0525F71A2049D90363 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,10 +180,53 @@
 				F00442BE25290D8F00CBC5B5 /* LaunchScreen.storyboard in Resources */,
 				F00442BB25290D8F00CBC5B5 /* Assets.xcassets in Resources */,
 				F00442B925290D8900CBC5B5 /* Main.storyboard in Resources */,
+				F0EFFDCF259A718B002D4E79 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E2A61F0525F71A2049D90363 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AP Entertainment/Pods-AP Entertainment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AP Entertainment/Pods-AP Entertainment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AP Entertainment/Pods-AP Entertainment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA71D2E9E3BE28144E65D34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AP Entertainment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F00442AA25290D8900CBC5B5 /* Sources */ = {
@@ -161,7 +239,9 @@
 				F00442B225290D8900CBC5B5 /* AppDelegate.swift in Sources */,
 				F0FBA55F258302FA0005FB5F /* VenueDetailViewController.swift in Sources */,
 				F0EFFDCB259A681D002D4E79 /* QuestionOfTheDayViewController.swift in Sources */,
+				F0446770259A78DF008A3234 /* QuestionOfTheDay.swift in Sources */,
 				F0E9FC11258C387E00A3B3A7 /* Venues.swift in Sources */,
+				F044676D259A7860008A3234 /* FirebaseClient.swift in Sources */,
 				F00442B425290D8900CBC5B5 /* SceneDelegate.swift in Sources */,
 				F00442C9252918FC00CBC5B5 /* ScheduleViewController.swift in Sources */,
 			);
@@ -307,6 +387,7 @@
 		};
 		F00442C325290D8F00CBC5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F420C3B26EC88EB49F627B8 /* Pods-AP Entertainment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +408,7 @@
 		};
 		F00442C425290D8F00CBC5B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE0B875A55848102EA593D31 /* Pods-AP Entertainment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

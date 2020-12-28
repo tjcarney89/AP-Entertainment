@@ -16,13 +16,18 @@ class QuestionOfTheDayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.questionTextBox.text = question
+        self.questionTextBox.text = self.question
         self.answerButton.layer.cornerRadius = 15
         self.answerButton.layer.borderWidth = 2
         self.answerButton.layer.borderColor = UIColor(named: "AP Entertainment Red")?.cgColor
     }
     
     override func viewWillAppear(_ animated: Bool) {
+//        FirebaseClient.fetchQuestionOfTheDay { (questionOfTheDay) in
+//            self.question = questionOfTheDay.question
+//            self.answer = questionOfTheDay.answer
+//            self.questionTextBox.text = self.question
+//        }
         self.answerButton.setTitle("View Answer", for: .normal)
         self.answerButton.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 20)
         self.answerButton.backgroundColor = UIColor.clear

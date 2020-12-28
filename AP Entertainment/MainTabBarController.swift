@@ -57,6 +57,12 @@ class MainTabBarController: UITabBarController {
                 
             }
         }
+        FirebaseClient.fetchQuestionOfTheDay { (questionOfTheDay) in
+            let questionVC = self.viewControllers?[1] as! QuestionOfTheDayViewController
+            questionVC.question = questionOfTheDay.question
+            questionVC.answer = questionOfTheDay.answer
+        }
+        
     }
     
     @objc func showAboutInfo(_sender: UITapGestureRecognizer) {
