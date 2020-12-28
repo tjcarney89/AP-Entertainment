@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bTU-0R-e9P">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch logo" translatesAutoresizingMaskIntoConstraints="NO" id="bTU-0R-e9P">
                                 <rect key="frame" x="64" y="197" width="286" height="285.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bTU-0R-e9P" secondAttribute="height" multiplier="1:1" id="uGJ-w2-LKs"/>
@@ -23,7 +23,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.10586848109999999" green="0.097971387209999997" blue="0.10196111350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="bTU-0R-e9P" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.75" id="GKn-Fc-OAj"/>
                             <constraint firstItem="bTU-0R-e9P" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.69" id="pYW-Cs-BeZ"/>
@@ -37,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="500" height="500"/>
+        <image name="launch logo" width="225" height="225"/>
     </resources>
 </document>
