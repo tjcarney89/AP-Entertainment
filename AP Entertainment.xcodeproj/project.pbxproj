@@ -18,6 +18,10 @@
 		F00442D025291D3D00CBC5B5 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00442CF25291D3D00CBC5B5 /* Venue.swift */; };
 		F044676D259A7860008A3234 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F044676C259A7860008A3234 /* FirebaseClient.swift */; };
 		F0446770259A78DF008A3234 /* QuestionOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F044676F259A78DF008A3234 /* QuestionOfTheDay.swift */; };
+		F044677C259A944C008A3234 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F044677B259A944C008A3234 /* AboutViewController.swift */; };
+		F06D0FB7259A9A4D0073DD34 /* SocialMediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D0FB6259A9A4D0073DD34 /* SocialMediaCollectionViewCell.swift */; };
+		F06D0FBA259A9B130073DD34 /* ContactMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D0FB9259A9B130073DD34 /* ContactMethod.swift */; };
+		F06D0FBD259A9CD80073DD34 /* ContactMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D0FBC259A9CD80073DD34 /* ContactMethods.swift */; };
 		F0E9FC11258C387E00A3B3A7 /* Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E9FC10258C387E00A3B3A7 /* Venues.swift */; };
 		F0EFFDCB259A681D002D4E79 /* QuestionOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EFFDCA259A681D002D4E79 /* QuestionOfTheDayViewController.swift */; };
 		F0EFFDCF259A718B002D4E79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0EFFDCE259A718B002D4E79 /* GoogleService-Info.plist */; };
@@ -40,6 +44,10 @@
 		F00442CF25291D3D00CBC5B5 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		F044676C259A7860008A3234 /* FirebaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
 		F044676F259A78DF008A3234 /* QuestionOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOfTheDay.swift; sourceTree = "<group>"; };
+		F044677B259A944C008A3234 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		F06D0FB6259A9A4D0073DD34 /* SocialMediaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaCollectionViewCell.swift; sourceTree = "<group>"; };
+		F06D0FB9259A9B130073DD34 /* ContactMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMethod.swift; sourceTree = "<group>"; };
+		F06D0FBC259A9CD80073DD34 /* ContactMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMethods.swift; sourceTree = "<group>"; };
 		F0E9FC10258C387E00A3B3A7 /* Venues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venues.swift; sourceTree = "<group>"; };
 		F0EFFDCA259A681D002D4E79 /* QuestionOfTheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOfTheDayViewController.swift; sourceTree = "<group>"; };
 		F0EFFDCE259A718B002D4E79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -100,22 +108,67 @@
 			children = (
 				F00442B125290D8900CBC5B5 /* AppDelegate.swift */,
 				F00442B325290D8900CBC5B5 /* SceneDelegate.swift */,
-				F00442C8252918FC00CBC5B5 /* ScheduleViewController.swift */,
-				F0E9FC10258C387E00A3B3A7 /* Venues.swift */,
-				F044676F259A78DF008A3234 /* QuestionOfTheDay.swift */,
-				F00442CC25291C8C00CBC5B5 /* ScheduleCollectionViewCell.swift */,
-				F0FBA55E258302FA0005FB5F /* VenueDetailViewController.swift */,
-				F0EFFDCA259A681D002D4E79 /* QuestionOfTheDayViewController.swift */,
-				F0F5E449258C4A5200CFF9F4 /* MainTabBarController.swift */,
-				F044676C259A7860008A3234 /* FirebaseClient.swift */,
-				F00442CF25291D3D00CBC5B5 /* Venue.swift */,
-				F00442B725290D8900CBC5B5 /* Main.storyboard */,
+				F0446774259A8EF5008A3234 /* Models */,
+				F0446776259A8F1F008A3234 /* Views */,
+				F0446777259A8F39008A3234 /* Controllers */,
+				F0446778259A8F51008A3234 /* Networking */,
+				F0446779259A8F6C008A3234 /* Helpers */,
 				F00442BA25290D8F00CBC5B5 /* Assets.xcassets */,
+				F00442B725290D8900CBC5B5 /* Main.storyboard */,
 				F00442BC25290D8F00CBC5B5 /* LaunchScreen.storyboard */,
 				F00442BF25290D8F00CBC5B5 /* Info.plist */,
 				F0EFFDCE259A718B002D4E79 /* GoogleService-Info.plist */,
 			);
 			path = "AP Entertainment";
+			sourceTree = "<group>";
+		};
+		F0446774259A8EF5008A3234 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F00442CF25291D3D00CBC5B5 /* Venue.swift */,
+				F044676F259A78DF008A3234 /* QuestionOfTheDay.swift */,
+				F06D0FB9259A9B130073DD34 /* ContactMethod.swift */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F0446776259A8F1F008A3234 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F00442CC25291C8C00CBC5B5 /* ScheduleCollectionViewCell.swift */,
+				F06D0FB6259A9A4D0073DD34 /* SocialMediaCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F0446777259A8F39008A3234 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0F5E449258C4A5200CFF9F4 /* MainTabBarController.swift */,
+				F00442C8252918FC00CBC5B5 /* ScheduleViewController.swift */,
+				F0FBA55E258302FA0005FB5F /* VenueDetailViewController.swift */,
+				F0EFFDCA259A681D002D4E79 /* QuestionOfTheDayViewController.swift */,
+				F044677B259A944C008A3234 /* AboutViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F0446778259A8F51008A3234 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F044676C259A7860008A3234 /* FirebaseClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F0446779259A8F6C008A3234 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F0E9FC10258C387E00A3B3A7 /* Venues.swift */,
+				F06D0FBC259A9CD80073DD34 /* ContactMethods.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,10 +291,14 @@
 				F0F5E44A258C4A5200CFF9F4 /* MainTabBarController.swift in Sources */,
 				F00442B225290D8900CBC5B5 /* AppDelegate.swift in Sources */,
 				F0FBA55F258302FA0005FB5F /* VenueDetailViewController.swift in Sources */,
+				F06D0FBD259A9CD80073DD34 /* ContactMethods.swift in Sources */,
 				F0EFFDCB259A681D002D4E79 /* QuestionOfTheDayViewController.swift in Sources */,
+				F044677C259A944C008A3234 /* AboutViewController.swift in Sources */,
 				F0446770259A78DF008A3234 /* QuestionOfTheDay.swift in Sources */,
 				F0E9FC11258C387E00A3B3A7 /* Venues.swift in Sources */,
+				F06D0FB7259A9A4D0073DD34 /* SocialMediaCollectionViewCell.swift in Sources */,
 				F044676D259A7860008A3234 /* FirebaseClient.swift in Sources */,
+				F06D0FBA259A9B130073DD34 /* ContactMethod.swift in Sources */,
 				F00442B425290D8900CBC5B5 /* SceneDelegate.swift in Sources */,
 				F00442C9252918FC00CBC5B5 /* ScheduleViewController.swift in Sources */,
 			);

@@ -11,6 +11,8 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>fb</string>
+				<string>instagram</string>
 				<string>zoomus</string>
 			</array>
 			<key>CFBundleURLName</key>
