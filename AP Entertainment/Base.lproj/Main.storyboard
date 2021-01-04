@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="How many states are there in the United States?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aqO-q2-0qm">
-                                <rect key="frame" x="10.5" y="68" width="393" height="358.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g46-D7-haE">
                                 <rect key="frame" x="31" y="702" width="352" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,17 +36,39 @@
                                     <action selector="takeoutButtonPressed:" destination="HhI-3o-UM9" eventType="touchUpInside" id="6ff-aD-CdK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bh-86-tQj">
+                                <rect key="frame" x="168" y="68" width="78.5" height="36"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="30" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="How many states are there in the United States?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aqO-q2-0qm">
+                                <rect key="frame" x="10.5" y="120" width="393" height="358.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FnZ-PG-q37"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aqO-q2-0qm" firstAttribute="centerX" secondItem="FnZ-PG-q37" secondAttribute="centerX" id="ATc-H1-CRt"/>
-                            <constraint firstItem="aqO-q2-0qm" firstAttribute="top" secondItem="FnZ-PG-q37" secondAttribute="top" constant="24" id="BuN-AG-R97"/>
                             <constraint firstItem="FnZ-PG-q37" firstAttribute="bottom" secondItem="g46-D7-haE" secondAttribute="bottom" constant="61" id="FJT-29-bhV"/>
+                            <constraint firstItem="aqO-q2-0qm" firstAttribute="top" secondItem="1bh-86-tQj" secondAttribute="bottom" constant="16" id="FTG-Iq-Igh"/>
                             <constraint firstItem="aqO-q2-0qm" firstAttribute="height" secondItem="MiZ-LK-lzP" secondAttribute="height" multiplier="0.4" id="Gj6-hX-oHD"/>
                             <constraint firstItem="g46-D7-haE" firstAttribute="width" secondItem="MiZ-LK-lzP" secondAttribute="width" multiplier="0.85" id="KG4-3w-vki"/>
+                            <constraint firstItem="1bh-86-tQj" firstAttribute="top" secondItem="FnZ-PG-q37" secondAttribute="top" constant="24" id="LCf-dy-Vw4"/>
                             <constraint firstItem="g46-D7-haE" firstAttribute="centerX" secondItem="FnZ-PG-q37" secondAttribute="centerX" id="OxW-6X-P1j"/>
                             <constraint firstItem="aqO-q2-0qm" firstAttribute="width" secondItem="MiZ-LK-lzP" secondAttribute="width" multiplier="0.95" id="hVC-95-AC3"/>
+                            <constraint firstItem="1bh-86-tQj" firstAttribute="centerX" secondItem="FnZ-PG-q37" secondAttribute="centerX" id="z2S-G1-0Sc"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Question of the Day" image="questionmark.circle.fill" catalog="system" selectedImage="questionmark.circle.fill" id="TC3-EB-kIb">
@@ -61,6 +76,7 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="answerButton" destination="g46-D7-haE" id="6uj-0W-VEm"/>
+                        <outlet property="dateLabel" destination="1bh-86-tQj" id="Hy3-7J-him"/>
                         <outlet property="questionTextBox" destination="aqO-q2-0qm" id="ryr-AO-2hO"/>
                     </connections>
                 </viewController>
@@ -89,7 +105,7 @@
 
 ​As the owner of AP Entertainment, we have 10 years of experience with events, &amp; over 300 weddings; thank you for asking us for your next event!</string>
                                                 <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who Are We?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3y-vd-8Sk">
@@ -98,8 +114,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect With Us!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge4-vs-hYF">
+                                                <rect key="frame" x="99.5" y="286.5" width="215" height="34.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="29"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5oU-cn-YVY">
-                                                <rect key="frame" x="31" y="310.5" width="352" height="409"/>
+                                                <rect key="frame" x="31" y="345" width="352" height="409"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="S1S-gd-jkz">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -136,13 +158,15 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="Ge4-vs-hYF" firstAttribute="centerX" secondItem="nnk-rB-mfU" secondAttribute="centerX" id="DXB-aD-fa8"/>
                                             <constraint firstItem="h0J-Fi-ufh" firstAttribute="width" secondItem="nnk-rB-mfU" secondAttribute="width" multiplier="0.95" id="EcE-hw-2vX"/>
                                             <constraint firstItem="h0J-Fi-ufh" firstAttribute="centerX" secondItem="nnk-rB-mfU" secondAttribute="centerX" id="FMy-Pu-qop"/>
                                             <constraint firstItem="5oU-cn-YVY" firstAttribute="width" secondItem="nnk-rB-mfU" secondAttribute="width" multiplier="0.85" id="MHd-yT-NRB"/>
                                             <constraint firstItem="5oU-cn-YVY" firstAttribute="centerX" secondItem="nnk-rB-mfU" secondAttribute="centerX" id="QfX-7h-o1W"/>
+                                            <constraint firstItem="Ge4-vs-hYF" firstAttribute="top" secondItem="h0J-Fi-ufh" secondAttribute="bottom" id="U5p-rP-dS3"/>
                                             <constraint firstItem="h0J-Fi-ufh" firstAttribute="top" secondItem="a3y-vd-8Sk" secondAttribute="bottom" constant="24" id="fUq-Q6-AnS"/>
                                             <constraint firstItem="5oU-cn-YVY" firstAttribute="height" secondItem="nnk-rB-mfU" secondAttribute="height" multiplier="0.5" id="inH-wq-gy1"/>
-                                            <constraint firstItem="5oU-cn-YVY" firstAttribute="top" secondItem="h0J-Fi-ufh" secondAttribute="bottom" constant="24" id="omp-DX-s0I"/>
+                                            <constraint firstItem="5oU-cn-YVY" firstAttribute="top" secondItem="Ge4-vs-hYF" secondAttribute="bottom" constant="24" id="uUi-2z-sVR"/>
                                             <constraint firstItem="h0J-Fi-ufh" firstAttribute="height" secondItem="nnk-rB-mfU" secondAttribute="height" multiplier="0.25" id="vLn-7X-n6K"/>
                                             <constraint firstItem="a3y-vd-8Sk" firstAttribute="centerX" secondItem="nnk-rB-mfU" secondAttribute="centerX" id="vmP-Sw-HOX"/>
                                             <constraint firstItem="a3y-vd-8Sk" firstAttribute="top" secondItem="nnk-rB-mfU" secondAttribute="top" constant="32" id="wTJ-XH-QI2"/>
@@ -310,7 +334,7 @@
             <objects>
                 <viewController id="HhI-3o-UM9" customClass="VenueDetailViewController" customModule="AP_Entertainment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gCV-49-zsX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Ut-dT-o2W">

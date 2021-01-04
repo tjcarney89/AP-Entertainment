@@ -8,6 +8,7 @@
 import UIKit
 
 class QuestionOfTheDayViewController: UIViewController {
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var questionTextBox: UITextView!
     @IBOutlet weak var answerButton: UIButton!
     
@@ -16,6 +17,7 @@ class QuestionOfTheDayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setDate()
         self.questionTextBox.text = self.question
         self.answerButton.layer.cornerRadius = 15
         self.answerButton.layer.borderWidth = 2
@@ -23,16 +25,19 @@ class QuestionOfTheDayViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        FirebaseClient.fetchQuestionOfTheDay { (questionOfTheDay) in
-//            self.question = questionOfTheDay.question
-//            self.answer = questionOfTheDay.answer
-//            self.questionTextBox.text = self.question
-//        }
         self.answerButton.setTitle("View Answer", for: .normal)
         self.answerButton.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 20)
         self.answerButton.backgroundColor = UIColor.clear
         self.answerButton.setTitleColor(.black, for: .normal)
         self.answerButton.setImage(UIImage(systemName: "lightbulb.fill"), for: .normal)
+    }
+    
+    func setDate() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM d, yyyy"
+        let today = dateFormatter.string(from: Date())
+        dateLabel.text = today
+        
     }
     
 
