@@ -30,7 +30,8 @@ class MainTabBarController: UITabBarController {
         let showAboutTap = UITapGestureRecognizer(target: self, action: #selector(self.showAboutInfo(_sender:)))
         let tabBarWidth = tabBar.frame.size.width
         let tabBarHeight = tabBar.frame.size.height
-        let itemSize = CGSize(width: tabBarWidth/5, height: tabBarHeight)
+        let maxWidth: CGFloat = 100
+        let itemSize = CGSize(width: min(maxWidth, tabBarWidth/5), height: tabBarHeight)
         
         
         view.addSubview(backgroundColor)

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PHq-tk-NHW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PHq-tk-NHW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -308,26 +309,92 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xlf-DC-VWB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="venueCell" rowHeight="133" id="Nw8-yG-aSR" customClass="VenueTableViewCell" customModule="AP_Entertainment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="133"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nw8-yG-aSR" id="Bhg-Bh-myg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DV5-Kb-13N">
+                                                    <rect key="frame" x="8" y="10" width="113" height="113"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="DV5-Kb-13N" secondAttribute="height" multiplier="1:1" id="xl6-9Y-cOr"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keu-ls-PLf">
+                                                    <rect key="frame" x="137" y="56" width="261" height="67"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVk-ZH-AjB">
+                                                    <rect key="frame" x="137" y="10" width="56" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="dWM-fX-PfH"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="keu-ls-PLf" firstAttribute="leading" secondItem="DV5-Kb-13N" secondAttribute="trailing" constant="16" id="03O-h1-5P9"/>
+                                                <constraint firstItem="keu-ls-PLf" firstAttribute="top" secondItem="zVk-ZH-AjB" secondAttribute="bottom" constant="16" id="9AC-Mz-Gg2"/>
+                                                <constraint firstItem="DV5-Kb-13N" firstAttribute="centerY" secondItem="Bhg-Bh-myg" secondAttribute="centerY" id="RkG-lh-TnN"/>
+                                                <constraint firstItem="zVk-ZH-AjB" firstAttribute="leading" secondItem="DV5-Kb-13N" secondAttribute="trailing" constant="16" id="Vip-n3-oFr"/>
+                                                <constraint firstItem="zVk-ZH-AjB" firstAttribute="top" secondItem="DV5-Kb-13N" secondAttribute="top" id="ZMy-tu-dbm"/>
+                                                <constraint firstItem="DV5-Kb-13N" firstAttribute="leading" secondItem="Bhg-Bh-myg" secondAttribute="leading" constant="8" id="kc9-dr-zHK"/>
+                                                <constraint firstItem="DV5-Kb-13N" firstAttribute="height" secondItem="Bhg-Bh-myg" secondAttribute="height" multiplier="0.85" id="mHK-Wf-Lbw"/>
+                                                <constraint firstItem="keu-ls-PLf" firstAttribute="bottom" secondItem="DV5-Kb-13N" secondAttribute="bottom" id="mwL-s1-rHD"/>
+                                                <constraint firstAttribute="trailing" secondItem="keu-ls-PLf" secondAttribute="trailing" constant="16" id="uMQ-XT-Pgp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateTimeLabel" destination="zVk-ZH-AjB" id="oRl-HV-sTP"/>
+                                            <outlet property="descriptionTextView" destination="keu-ls-PLf" id="Q9L-ba-w0c"/>
+                                            <outlet property="logoImageView" destination="DV5-Kb-13N" id="Vq7-jU-CdT"/>
+                                            <segue destination="HhI-3o-UM9" kind="presentation" id="Gbg-nJ-fSj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="smB-H4-Vca"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="smB-H4-Vca" firstAttribute="trailing" secondItem="xlf-DC-VWB" secondAttribute="trailing" id="5zD-Th-jfi"/>
                             <constraint firstItem="d5X-Oi-KuS" firstAttribute="top" secondItem="smB-H4-Vca" secondAttribute="top" id="7os-my-oNE"/>
                             <constraint firstItem="smB-H4-Vca" firstAttribute="bottom" secondItem="d5X-Oi-KuS" secondAttribute="bottom" id="9BX-vU-aJT"/>
+                            <constraint firstItem="xlf-DC-VWB" firstAttribute="leading" secondItem="smB-H4-Vca" secondAttribute="leading" id="EBa-Sy-cg4"/>
                             <constraint firstItem="d5X-Oi-KuS" firstAttribute="width" secondItem="v93-nE-KNR" secondAttribute="width" multiplier="0.95" id="bmB-dX-MIC"/>
+                            <constraint firstItem="xlf-DC-VWB" firstAttribute="top" secondItem="smB-H4-Vca" secondAttribute="top" id="dPo-8I-Zk1"/>
                             <constraint firstItem="d5X-Oi-KuS" firstAttribute="centerX" secondItem="smB-H4-Vca" secondAttribute="centerX" id="i2R-em-LU3"/>
+                            <constraint firstItem="smB-H4-Vca" firstAttribute="bottom" secondItem="xlf-DC-VWB" secondAttribute="bottom" id="iMd-9h-Uxa"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="d5X-Oi-KuS"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Schedule" image="calendar" catalog="system" selectedImage="calendar" id="p6p-Ws-NO1">
                         <color key="badgeColor" name="AP Entertainment Red"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="scheduleCollectionView" destination="d5X-Oi-KuS" id="09v-Of-U6P"/>
+                        <outlet property="scheduleTableView" destination="xlf-DC-VWB" id="Lde-Wh-7h0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XUr-QY-h2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1651" y="-863"/>
+            <point key="canvasLocation" x="-1652.1739130434785" y="-863.16964285714278"/>
         </scene>
         <!--Venue Detail View Controller-->
         <scene sceneID="jiu-ls-4yQ">
@@ -426,6 +493,9 @@
             <point key="canvasLocation" x="-812" y="-863"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Gbg-nJ-fSj"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="apps.iphone" catalog="system" width="108" height="128"/>
         <image name="calendar" catalog="system" width="128" height="106"/>

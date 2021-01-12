@@ -22,6 +22,7 @@
 		F06D0FB7259A9A4D0073DD34 /* SocialMediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D0FB6259A9A4D0073DD34 /* SocialMediaCollectionViewCell.swift */; };
 		F06D0FBA259A9B130073DD34 /* ContactMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D0FB9259A9B130073DD34 /* ContactMethod.swift */; };
 		F06D0FBD259A9CD80073DD34 /* ContactMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D0FBC259A9CD80073DD34 /* ContactMethods.swift */; };
+		F0AAE22D25A6035A007F3F42 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AAE22C25A6035A007F3F42 /* VenueTableViewCell.swift */; };
 		F0E9FC11258C387E00A3B3A7 /* Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E9FC10258C387E00A3B3A7 /* Venues.swift */; };
 		F0EFFDCB259A681D002D4E79 /* QuestionOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EFFDCA259A681D002D4E79 /* QuestionOfTheDayViewController.swift */; };
 		F0EFFDCF259A718B002D4E79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0EFFDCE259A718B002D4E79 /* GoogleService-Info.plist */; };
@@ -48,6 +49,7 @@
 		F06D0FB6259A9A4D0073DD34 /* SocialMediaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaCollectionViewCell.swift; sourceTree = "<group>"; };
 		F06D0FB9259A9B130073DD34 /* ContactMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMethod.swift; sourceTree = "<group>"; };
 		F06D0FBC259A9CD80073DD34 /* ContactMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMethods.swift; sourceTree = "<group>"; };
+		F0AAE22C25A6035A007F3F42 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
 		F0E9FC10258C387E00A3B3A7 /* Venues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venues.swift; sourceTree = "<group>"; };
 		F0EFFDCA259A681D002D4E79 /* QuestionOfTheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOfTheDayViewController.swift; sourceTree = "<group>"; };
 		F0EFFDCE259A718B002D4E79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				F00442CC25291C8C00CBC5B5 /* ScheduleCollectionViewCell.swift */,
 				F06D0FB6259A9A4D0073DD34 /* SocialMediaCollectionViewCell.swift */,
+				F0AAE22C25A6035A007F3F42 /* VenueTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				F0EFFDCB259A681D002D4E79 /* QuestionOfTheDayViewController.swift in Sources */,
 				F044677C259A944C008A3234 /* AboutViewController.swift in Sources */,
 				F0446770259A78DF008A3234 /* QuestionOfTheDay.swift in Sources */,
+				F0AAE22D25A6035A007F3F42 /* VenueTableViewCell.swift in Sources */,
 				F0E9FC11258C387E00A3B3A7 /* Venues.swift in Sources */,
 				F06D0FB7259A9A4D0073DD34 /* SocialMediaCollectionViewCell.swift in Sources */,
 				F044676D259A7860008A3234 /* FirebaseClient.swift in Sources */,
